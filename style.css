@@ -30,71 +30,49 @@ body, html {
   flex-wrap: wrap;
 }
 
+.wrapper {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+  flex-wrap: nowrap; /* предотвращает перенос элементов */
+}
+
 .text {
-  width: fit-content;
-  height: fit-content;
+  display: flex;
+  align-items: stretch;
 
   font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
 
-  position: relative;
+  font-size: clamp(2rem, 5vw, 5rem);
 
-  display: flex;
-  flex: 0 0 auto;
-
-  font-size: 5rem;
   color: white;
   background: black;
+
+  padding: 0.5rem 1rem;
+
+  white-space: nowrap;
+  overflow: hidden;
+
+  flex: 1 1 auto;
 
   z-index: 10;
 }
 
-.mask {
-  font-size: 5rem;
-  color: white;
-
+.test{
   display: flex;
-  flex: 0 0 auto;
+  align-items: stretch;
 
-  mix-blend-mode: multiply;
-}
+  width: 100%;
+  max-width: 400px;
+  min-width: 100px;
 
-#text1 {
-  width: 490px;
-  height: 5vh;
-}
-#mask1 {
-  max-width: 15vw;
-  min-width: 8vw;
-  height: 5vh;
-}
+  border: 1rem solid black;
 
-#text2 {
-  width: 730px;
-  height: 5vh;
-}
-#mask2 {
-   width: 5vw;
-   height: 5vh;
+  flex: 1 1 auto;
+
+  z-index: 10;
  }
-
-#text3{
-  width: 1400px;
-  height: 5vh;
-}
-#mask3{
-  width: 13vw;
-  height: 5vh;
-}
-
-#text4 {
-  width: 1150px;
-  height: 5vh;
-}
-#mask4 {
-  width: 30vw;
-  height: 5vh;
-}
 
 .black-placeholder {
   width: 100vw;
