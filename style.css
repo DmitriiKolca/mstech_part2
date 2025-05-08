@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  flex-wrap: wrap;
+}
+
+.text {
+  width: fit-content;
+  height: fit-content;
+
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+
+  position: relative;
+
+  display: flex;
+  flex: 0 0 auto;
+
+  font-size: 5rem;
+  color: white;
+  background: black;
+
+  z-index: 10;
+}
+
+.mask {
+  font-size: 5rem;
+  color: white;
+
+  display: flex;
+  flex: 0 0 auto;
+
+  mix-blend-mode: multiply;
+}
+
+#text1 {
+  width: 490px;
+  height: 5vh;
+}
+#mask1 {
+  max-width: 15vw;
+  min-width: 8vw;
+  height: 5vh;
+}
+
+#text2 {
+  width: 730px;
+  height: 5vh;
+}
+#mask2 {
+   width: 5vw;
+   height: 5vh;
+ }
+
+#text3{
+  width: 1400px;
+  height: 5vh;
+}
+#mask3{
+  width: 13vw;
+  height: 5vh;
+}
+
+#text4 {
+  width: 1150px;
+  height: 5vh;
+}
+#mask4 {
+  width: 30vw;
+  height: 5vh;
+}
+
+.black-placeholder {
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  z-index: 10;
+}
